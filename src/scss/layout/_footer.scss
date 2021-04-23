@@ -13,7 +13,6 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   &__links {
     margin-top: 60px;
     text-align: center;
@@ -30,7 +29,7 @@
     text-align: center;
   }
   &__copy {
-    color: white;
+    color: $color-one;
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 45px;

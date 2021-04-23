@@ -154,8 +154,6 @@ table {
   align-items: center;
   background-color: #0271bc;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 44px;
   height: 45px; }
   .header__nav--menu {
@@ -172,8 +170,7 @@ table {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 0; }
+  background-position: center; }
   .hero__title {
     font-family: "Roboto Slab", serif;
     font-size: 42px;
@@ -181,14 +178,10 @@ table {
     text-align: center;
     text-transform: uppercase; }
   .hero__subtitle {
-    display: block;
     color: white;
-    text-align: center;
     margin-top: 20px; }
   .hero__buttom {
-    display: block;
     width: 45px;
-    height: 45px;
     background: white;
     border-radius: 50%;
     text-align: center;
@@ -200,8 +193,7 @@ table {
       height: 11.7px; }
 
 .tips {
-  margin-top: 30px;
-  display: block; }
+  margin-top: 30px; }
   .tips__small-text {
     display: block;
     font-size: 14px;
@@ -209,7 +201,6 @@ table {
     padding-top: 15px;
     padding-bottom: 15px; }
   .tips__title {
-    display: block;
     text-transform: capitalize;
     font-family: "Roboto Slab", serif;
     font-size: 24px;
@@ -225,18 +216,21 @@ table {
     color: #4a4a4a;
     margin-bottom: 30px; }
   .tips__buttom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 76px;
-    height: 45px;
-    border: 3px solid #f26002;
-    border-radius: 22px;
     margin-bottom: 45px; }
     .tips__buttom--link {
       text-decoration: none;
       color: #f26002;
-      font-size: 20px; }
+      font-size: 20px;
+      width: 76px;
+      height: 45px;
+      border: 3px solid #f26002;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 22px; }
+      .tips__buttom--link:hover {
+        color: white;
+        background: #f26002; }
 
 .background {
   background: #eff9ff; }
@@ -258,8 +252,6 @@ table {
     padding-bottom: 45px; }
   .reason__article {
     grid-column: span 3;
-    width: 184px;
-    text-align: center;
     margin: auto; }
     .reason__article--subtitle {
       font-size: 18px;
@@ -273,18 +265,22 @@ table {
       width: 184px;
       margin-bottom: 45px; }
   .reason__buttom {
-    width: 184px;
-    height: 45px;
-    background: #f26002;
-    border-radius: 22px;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 60px; }
     .reason__buttom--link {
       text-decoration: none;
+      width: 184px;
+      height: 45px;
+      background: #f26002;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: white; }
+      .reason__buttom--link:hover {
+        color: #f26002;
+        background: none;
+        border: 2px solid #f26002; }
   .reason__buttom-up {
     display: block;
     border-radius: 50%;
@@ -295,7 +291,6 @@ table {
     top: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -308,8 +303,7 @@ table {
 
 .footer {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .footer__links {
     margin-top: 60px;
     text-align: center;
@@ -320,8 +314,7 @@ table {
     padding: 20px;
     line-height: 1.8;
     font-weight: 300;
-    text-transform: uppercase;
-    font-size: 16px; }
+    text-transform: uppercase; }
   .footer__socialmedia {
     margin-bottom: 30px;
     text-align: center; }

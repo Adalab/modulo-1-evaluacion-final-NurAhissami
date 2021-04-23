@@ -1,6 +1,5 @@
 .tips {
   margin-top: 30px;
-  display: block;
   &__small-text {
     display: block;
     font-size: $size-smalltex;
@@ -9,7 +8,6 @@
     padding-bottom: 15px;
   }
   &__title {
-    display: block;
     @include subtitles;
     width: 280px;
     padding-bottom: 15px;
@@ -22,19 +20,22 @@
     margin-bottom: 30px;
   }
   &__buttom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 76px;
-    height: 45px;
-    border: 3px solid $color-buttom;
-    border-radius: 22px;
     margin-bottom: 45px;
-
     &--link {
       text-decoration: none;
       color: $color-buttom;
       font-size: 20px;
+      width: 76px;
+      height: 45px;
+      border: 3px solid $color-buttom;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 22px;
+      &:hover {
+        color: $color-one;
+        background: $color-buttom;
+      }
     }
   }
 }

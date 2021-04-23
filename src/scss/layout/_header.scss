@@ -4,13 +4,11 @@
   align-items: center;
   background-color: $color-menu;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 44px;
   height: 45px;
   &__nav {
     &--menu {
-      color: white;
+      color: $color-one;
       margin: auto;
       text-align: center;
     }
