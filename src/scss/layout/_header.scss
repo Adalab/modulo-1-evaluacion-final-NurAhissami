@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-menu;
+  position: fixed;
+  width: 44px;
+  height: 45px;
+  &__nav {
+    &--menu {
+      color: white;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

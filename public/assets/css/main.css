@@ -132,4 +132,17 @@ table {
   margin: 0;
   padding: 0; }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0271bc;
+  position: fixed;
+  width: 44px;
+  height: 45px; }
+  .header__nav--menu {
+    color: white;
+    margin: auto;
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
