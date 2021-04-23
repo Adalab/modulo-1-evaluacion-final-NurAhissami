@@ -8,7 +8,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
   &__title {
+    word-spacing: 100vw;
     font-family: $font-title;
     font-size: $size-title;
     color: $color-one;

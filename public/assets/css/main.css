@@ -168,6 +168,7 @@ table {
   background-repeat: no-repeat;
   background-position: center; }
   .hero__title {
+    word-spacing: 100vw;
     font-family: "Roboto Slab", serif;
     font-size: 42px;
     color: white;
@@ -327,7 +328,14 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    -webkit-animation-name: up;
+    animation-name: up;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
     .reason__buttom-up--img {
       width: 20px;
       height: 24px; }
@@ -358,6 +366,32 @@ table {
         font-family: "Roboto Slab", serif;
         font-size: 32px;
         font-weight: 700; } }
+
+@-webkit-keyframes up {
+  0% {
+    box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
+    bottom: 1em; }
+  50% {
+    box-shadow: 0 0 20px rgba(242, 96, 2, 0.5);
+    bottom: -0.5em; }
+  85% {
+    box-shadow: 0 0 30px rgba(242, 96, 2, 0.2); }
+  100% {
+    box-shadow: 0 0 4px rgba(242, 96, 2, 0.25);
+    bottom: 1em; } }
+
+@keyframes up {
+  0% {
+    box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
+    bottom: 1em; }
+  50% {
+    box-shadow: 0 0 20px rgba(242, 96, 2, 0.5);
+    bottom: -0.5em; }
+  85% {
+    box-shadow: 0 0 30px rgba(242, 96, 2, 0.2); }
+  100% {
+    box-shadow: 0 0 4px rgba(242, 96, 2, 0.25);
+    bottom: 1em; } }
 
 .background-footer {
   background: #304268; }
