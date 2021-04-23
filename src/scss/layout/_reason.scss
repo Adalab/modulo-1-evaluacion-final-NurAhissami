@@ -69,14 +69,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: up;
+    animation-name: shadow;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     &--img {
       width: 20px;
       height: 24px;
+      animation-name: up;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
     }
     &:hover {
     }
@@ -109,7 +112,7 @@
   }
 }
 
-@keyframes up {
+@keyframes shadow {
   0% {
     box-shadow: 0 0 4px rgba($color-buttom, 0.5);
     bottom: 1em;
@@ -124,5 +127,13 @@
   100% {
     box-shadow: 0 0 4px rgba($color-buttom, 0.25);
     bottom: 1em;
+  }
+}
+@keyframes up {
+  from {
+    transform: translate(0, 40%);
+  }
+  to {
+    transform: translate(0, 10%);
   }
 }

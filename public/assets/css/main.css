@@ -328,8 +328,8 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-animation-name: up;
-    animation-name: up;
+    -webkit-animation-name: shadow;
+    animation-name: shadow;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-timing-function: ease-in-out;
@@ -338,7 +338,15 @@ table {
     animation-iteration-count: infinite; }
     .reason__buttom-up--img {
       width: 20px;
-      height: 24px; }
+      height: 24px;
+      -webkit-animation-name: up;
+      animation-name: up;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
   @media (min-width: 768px) {
     .reason {
       gap: 30px;
@@ -367,7 +375,7 @@ table {
         font-size: 32px;
         font-weight: 700; } }
 
-@-webkit-keyframes up {
+@-webkit-keyframes shadow {
   0% {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
     bottom: 1em; }
@@ -380,7 +388,7 @@ table {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.25);
     bottom: 1em; } }
 
-@keyframes up {
+@keyframes shadow {
   0% {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
     bottom: 1em; }
@@ -392,6 +400,18 @@ table {
   100% {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.25);
     bottom: 1em; } }
+
+@-webkit-keyframes up {
+  from {
+    transform: translate(0, 40%); }
+  to {
+    transform: translate(0, 10%); } }
+
+@keyframes up {
+  from {
+    transform: translate(0, 40%); }
+  to {
+    transform: translate(0, 10%); } }
 
 .background-footer {
   background: #304268; }
