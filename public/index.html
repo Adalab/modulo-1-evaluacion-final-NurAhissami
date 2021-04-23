@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
@@ -79,25 +80,41 @@
           <div class="footer">
 
               <section class="footer__links">
-                  <ul class="footer__list">
-                      <li><a href="" title="">Articles</a></li>
-                      <li><a href="" title="">Books</a></li>
-                      <li><a href="" title="">Events</a></li>
-                      <li><a href="" title="">Reasons</a></li>
-                      <li><a href="" title="">Tips</a></li>
+                  <ul>
+                      <li class="footer__list">
+                          <a class="footer__list--a" href="" title="">Articles</a>
+                      </li>
+                      <li class="footer__list">
+                          <a class="footer__list--a" href="" title="">Books</a>
+                      </li>
+                      <li class="footer__list">
+                          <a class="footer__list--a" href="" title="">Events</a>
+                      </li>
+                      <li class="footer__list">
+                          <a class="footer__list--a" href="" title="">Reasons</a>
+                      </li>
+                      <li class="footer__list">
+                          <a class="footer__list--a" href="" title="">Tips</a>
+                      </li>
                   </ul>
               </section>
               <section class="footer__socialmedia">
                   <nav class="footer__nav">
-                      <ul class="footer__list">
-                          <li><a href="" title="">Twitter</a></li>
-                          <li><a href="" title="">Instagram</a></li>
-                          <li><a href="" title="">Mastodon.social</a></li>
+                      <ul>
+                          <li class="footer__list">
+                              <a class="footer__list--a" href="" title="">Twitter</a>
+                          </li>
+                          <li class="footer__list">
+                              <a class="footer__list--a" href="" title="">Instagram</a>
+                          </li>
+                          <li class="footer__list">
+                              <a class="footer__list--a" href="" title="">Mastodon.social</a>
+                          </li>
                       </ul>
                   </nav>
               </section>
               <small class="footer__copy">
-                  <span>&copy;2021</span>
+                  <span class="footer__copy--copy">&copy;2021</span>
                   <span>we <i class="fas fa-heart"></i> components</span>
               </small>
           </div>
