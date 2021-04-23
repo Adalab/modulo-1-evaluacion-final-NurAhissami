@@ -270,32 +270,36 @@ table {
   text-align: center;
   position: relative; }
   .reason__title {
-    padding-top: 30px;
     text-transform: capitalize;
     font-family: "Roboto Slab", serif;
     font-size: 24px;
     font-weight: 700;
     grid-column: span 3;
-    padding-top: 30px;
-    padding-bottom: 45px; }
+    margin: auto; }
   .reason__article {
     grid-column: span 3;
-    margin: auto; }
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 45px; }
+    .reason__article--title {
+      margin: auto; }
     .reason__article--subtitle {
+      margin: auto;
       font-size: 18px;
       font-family: "Roboto Slab", serif;
       padding: 15px;
-      padding-top: 0; }
+      padding-top: 0;
+      margin: auto; }
     .reason__article--text {
       font-size: 18px;
       font-family: "Roboto", sans-serif;
       line-height: 1.6;
       width: 184px;
-      margin-bottom: 45px; }
+      margin: auto; }
   .reason__buttom {
     grid-column: span 1;
-    margin: auto;
-    margin-bottom: 60px; }
+    padding-bottom: 60px;
+    margin: auto; }
     .reason__buttom--link {
       text-decoration: none;
       width: 184px;

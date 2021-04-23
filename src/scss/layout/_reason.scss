@@ -8,31 +8,37 @@
   text-align: center;
   position: relative;
   &__title {
-    padding-top: 30px;
     @include subtitles;
     grid-column: span 3;
-    padding-top: 30px;
-    padding-bottom: 45px;
+    margin: auto;
   }
   &__article {
     grid-column: span 3;
     margin: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    &--title {
+      margin: auto;
+    }
     &--subtitle {
+      margin: auto;
       font-size: $size-text;
       font-family: $font-title;
       padding: 15px;
       padding-top: 0;
+      margin: auto;
     }
     &--text {
       @include text;
       width: 184px;
-      margin-bottom: 45px;
+      margin: auto;
     }
   }
   &__buttom {
     grid-column: span 1;
+    padding-bottom: 60px;
     margin: auto;
-    margin-bottom: 60px;
+
     &--link {
       text-decoration: none;
       width: 184px;
