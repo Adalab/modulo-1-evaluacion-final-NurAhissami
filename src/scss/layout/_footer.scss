@@ -22,6 +22,9 @@
     &--a {
       text-decoration: none;
       @include textfooter;
+      &:hover {
+        color: $color-buttom;
+      }
     }
   }
   &__socialmedia {

@@ -372,10 +372,12 @@ table {
   .footer__list--a {
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     line-height: 1.8;
     font-weight: 300;
     text-transform: uppercase; }
+    .footer__list--a:hover {
+      color: #f26002; }
   .footer__socialmedia {
     margin-bottom: 30px;
     text-align: center; }
