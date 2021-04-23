@@ -1,0 +1,6 @@
+@mixin subtitles {
+  text-transform: capitalize;
+  font-family: $font-title;
+  font-size: $size-subtitle;
+  font-weight: 700;
+}
