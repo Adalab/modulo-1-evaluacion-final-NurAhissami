@@ -172,7 +172,8 @@ table {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  margin: 0; }
   .hero__title {
     font-family: "Roboto Slab", serif;
     font-size: 42px;
@@ -230,10 +231,31 @@ table {
     width: 76px;
     height: 45px;
     border: 3px solid #f26002;
-    border-radius: 22px; }
+    border-radius: 22px;
+    margin-bottom: 45px; }
     .tips__buttom--link {
       text-decoration: none;
       color: #f26002;
       font-size: 20px; }
+
+.background {
+  background: #eff9ff; }
+
+.reason {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center; }
+  .reason__title {
+    padding-top: 30px;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-weight: 700;
+    grid-column: span 3;
+    padding-top: 30px;
+    padding-bottom: 45px; }
+  .reason__article {
+    grid-column: span 3; }
 
 /*# sourceMappingURL=main.css.map */
