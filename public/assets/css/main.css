@@ -372,7 +372,7 @@ table {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
     bottom: 1em; }
   50% {
-    box-shadow: 0 0 20px rgba(242, 96, 2, 0.5);
+    box-shadow: 0 0 20px #f26002;
     bottom: -0.5em; }
   85% {
     box-shadow: 0 0 30px rgba(242, 96, 2, 0.2); }
@@ -385,7 +385,7 @@ table {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.5);
     bottom: 1em; }
   50% {
-    box-shadow: 0 0 20px rgba(242, 96, 2, 0.5);
+    box-shadow: 0 0 20px #f26002;
     bottom: -0.5em; }
   85% {
     box-shadow: 0 0 30px rgba(242, 96, 2, 0.2); }
