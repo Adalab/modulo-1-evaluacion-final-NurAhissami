@@ -49,4 +49,17 @@
       }
     }
   }
+  @media (min-width: 1200px) {
+    margin-left: 275px;
+    margin-right: 275px;
+
+    &__title {
+      @include subtitlemedia1200;
+    }
+    &__buttom {
+      &--link {
+        width: 160px;
+      }
+    }
+  }
 }

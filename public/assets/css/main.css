@@ -5,10 +5,6 @@
     .central-column {
       margin-left: 39px;
       margin-right: 39px; } }
-  @media (min-width: 1280px) {
-    .central-column {
-      margin-left: 275px;
-      margin-right: 275px; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -194,9 +190,15 @@ table {
       height: 11.7px; }
   @media (min-width: 768px) {
     .hero__title {
-      font-size: 80px; }
+      font-size: 80px;
+      line-height: 106px; }
     .hero__subtitle {
       font-size: 24px; } }
+  @media (min-width: 1200px) {
+    .hero__title {
+      font-size: 100px;
+      max-width: 730px;
+      line-height: 132px; } }
 
 .tips {
   margin-top: 30px; }
@@ -246,6 +248,17 @@ table {
       width: 100%; }
     .tips__buttom--link {
       width: 91px; } }
+  @media (min-width: 1200px) {
+    .tips {
+      margin-left: 275px;
+      margin-right: 275px; }
+      .tips__title {
+        text-transform: capitalize;
+        font-family: "Roboto Slab", serif;
+        font-size: 32px;
+        font-weight: 700; }
+      .tips__buttom--link {
+        width: 160px; } }
 
 .background {
   background: #eff9ff; }
@@ -316,17 +329,31 @@ table {
       height: 24px; }
   @media (min-width: 768px) {
     .reason {
+      gap: 30px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr; }
       .reason__title {
-        grid-row: span 1; }
+        grid-row: span 1;
+        text-transform: capitalize;
+        font-family: "Roboto Slab", serif;
+        font-size: 26px;
+        font-weight: 700; }
       .reason__article {
         grid-column: span 1;
         grid-row: 2/3; }
       .reason__buttom {
         grid-column: 2/3;
         grid-row: span 1; } }
+  @media (min-width: 1200px) {
+    .reason {
+      margin-left: 85px;
+      margin-right: 85px; }
+      .reason__title {
+        text-transform: capitalize;
+        font-family: "Roboto Slab", serif;
+        font-size: 32px;
+        font-weight: 700; } }
 
 .background-footer {
   background: #304268; }
@@ -374,6 +401,10 @@ table {
       .footer__copy {
         order: 1;
         align-items: flex-start; } }
+  @media (min-width: 1200px) {
+    .footer {
+      margin-left: 370px;
+      margin-right: 370px; } }
 
 .fa-heart {
   color: red; }

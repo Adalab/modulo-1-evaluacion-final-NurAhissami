@@ -70,11 +70,13 @@
     }
   }
   @media (min-width: 768px) {
+    gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     &__title {
       grid-row: span 1;
+      @include subtitlemedia768;
     }
     &__article {
       grid-column: span 1;
@@ -83,6 +85,14 @@
     &__buttom {
       grid-column: 2/3;
       grid-row: span 1;
+    }
+  }
+  @media (min-width: 1200px) {
+    margin-left: 85px;
+    margin-right: 85px;
+
+    &__title {
+      @include subtitlemedia1200;
     }
   }
 }

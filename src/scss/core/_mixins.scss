@@ -27,3 +27,9 @@
   font-family: $font-main;
   line-height: 1.6;
 }
+@mixin subtitlemedia1200 {
+  text-transform: capitalize;
+  font-family: $font-title;
+  font-size: 32px;
+  font-weight: 700;
+}

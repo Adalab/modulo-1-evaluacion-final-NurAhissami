@@ -37,9 +37,17 @@
   @media (min-width: 768px) {
     &__title {
       font-size: 80px;
+      line-height: 106px;
     }
     &__subtitle {
       font-size: 24px;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__title {
+      font-size: 100px;
+      max-width: 730px;
+      line-height: 132px;
     }
   }
 }
