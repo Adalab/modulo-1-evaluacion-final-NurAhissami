@@ -4,3 +4,8 @@
   font-size: $size-subtitle;
   font-weight: 700;
 }
+@mixin text {
+  font-size: $size-text;
+  font-family: $font-main;
+  line-height: 1.6;
+}
