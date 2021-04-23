@@ -30,6 +30,7 @@
     }
   }
   &__buttom {
+    grid-column: span 1;
     margin: auto;
     margin-bottom: 60px;
     &--link {
@@ -62,9 +63,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     &--img {
       width: 20px;
       height: 24px;
+    }
+  }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    &__title {
+      grid-row: span 1;
+    }
+    &__article {
+      grid-column: span 1;
+      grid-row: 2/3;
+    }
+    &__buttom {
+      grid-column: 2/3;
+      grid-row: span 1;
     }
   }
 }
