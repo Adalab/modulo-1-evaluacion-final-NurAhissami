@@ -27,7 +27,7 @@
       font-size: 20px;
       width: 76px;
       height: 45px;
-      border: 3px solid $color-buttom;
+      border: 2px solid $color-buttom;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,6 +35,17 @@
       &:hover {
         color: $color-one;
         background: $color-buttom;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &__title {
+      @include subtitlemedia768;
+      width: 100%;
+    }
+    &__buttom {
+      &--link {
+        width: 91px;
       }
     }
   }

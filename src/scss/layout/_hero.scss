@@ -32,4 +32,12 @@
       height: 11.7px;
     }
   }
+  @media (min-width: 768px) {
+    &__title {
+      font-size: 80px;
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
 }

@@ -16,3 +16,14 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+@mixin subtitlemedia768 {
+  text-transform: capitalize;
+  font-family: $font-title;
+  font-size: 26px;
+  font-weight: 700;
+}
+@mixin textmedia768 {
+  font-size: 20px;
+  font-family: $font-main;
+  line-height: 1.6;
+}

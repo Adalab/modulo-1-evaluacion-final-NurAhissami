@@ -155,7 +155,7 @@ table {
   background-color: #0271bc;
   position: absolute;
   width: 44px;
-  height: 45px; }
+  height: 44px; }
   .header__nav--menu {
     color: white;
     margin: auto;
@@ -191,6 +191,11 @@ table {
     .hero__buttom--img {
       width: 20px;
       height: 11.7px; }
+  @media (min-width: 768px) {
+    .hero__title {
+      font-size: 80px; }
+    .hero__subtitle {
+      font-size: 24px; } }
 
 .tips {
   margin-top: 30px; }
@@ -223,7 +228,7 @@ table {
       font-size: 20px;
       width: 76px;
       height: 45px;
-      border: 3px solid #f26002;
+      border: 2px solid #f26002;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -231,6 +236,15 @@ table {
       .tips__buttom--link:hover {
         color: white;
         background: #f26002; }
+  @media (min-width: 768px) {
+    .tips__title {
+      text-transform: capitalize;
+      font-family: "Roboto Slab", serif;
+      font-size: 26px;
+      font-weight: 700;
+      width: 100%; }
+    .tips__buttom--link {
+      width: 91px; } }
 
 .background {
   background: #eff9ff; }
