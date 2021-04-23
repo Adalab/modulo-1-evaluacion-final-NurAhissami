@@ -21,32 +21,34 @@
   <main>
     <include src="./partials/hero.html"></include>
     <include src="./partials/tips.html"></include>
-    <include src="./partials/reason.html"></include>
+
+    <section class="background">
+      <div class="central-column">
+        <div class="reason">
+          <h2 class="reason__title">3 Reasons to purchase</h2>
+          <include src="./partials/reason.html" title="Ut sed metus"
+            description="Lorem ipsum dolor sit amet, consectetur.">
+          </include>
+          <include src="./partials/reason.html" title="Carabitur ac erat"
+            description="Mauris mattis urna quis lorem molestie.">
+          </include>
+          <include src="./partials/reason.html" title="Morbi dictumst"
+            description="Alquam in dolor et dolor tincidunt.">
+          </include>
+          <div class="reason__buttom">
+            <a class="reason__buttom--link" href="https://adalab.es/" title="More reasons">More Reasons</a>
+          </div>
+          <div class="reason__buttom-up">
+            <a class="reason__buttom-up--link" href="" title="down">
+              <img class="reason__buttom-up--img" src="./assets/images/ico-arrow.svg" alt="up" title="up">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="central-column">
-    <section>
-      <ul>
-        <li><a href="" title="">Articles</a></li>
-        <li><a href="" title="">Books</a></li>
-        <li><a href="" title="">Events</a></li>
-        <li><a href="" title="">Reasons</a></li>
-        <li><a href="" title="">Tips</a></li>
-      </ul>
-    </section>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="" title="">Twitter</a></li>
-          <li><a href="" title="">Instagram</a></li>
-          <li><a href="" title="">Mastodon.social</a></li>
-        </ul>
-      </nav>
-    </section>
-    <small>
-      <span>&copy;2021</span>
-      <span>we <i class="fas fa-heart"></i> components</span>
-    </small>
-  </footer>
+  <include src="./partials/footer.html"></include>
+
 </body>
 
 </html>

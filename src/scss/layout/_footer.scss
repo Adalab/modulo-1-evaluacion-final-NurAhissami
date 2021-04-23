@@ -1,0 +1,18 @@
+//   &__buttom-up {
+//     display: block;
+//     background-color: white;
+//     width: 45px;
+//     height: 45px;
+//     // position: absolute;
+//     // left: 50%;
+//     // transform: translate(-50%, -50%);
+//   }
+.background-footer {
+  background: $color-backgroundfooter;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

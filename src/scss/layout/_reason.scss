@@ -6,6 +6,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   text-align: center;
+  position: relative;
 
   &__title {
     padding-top: 30px;
@@ -16,5 +17,53 @@
   }
   &__article {
     grid-column: span 3;
+    width: 184px;
+    text-align: center;
+    margin: auto;
+    &--subtitle {
+      font-size: $size-text;
+      font-family: $font-title;
+      padding: 15px;
+      padding-top: 0;
+    }
+    &--text {
+      @include text;
+      width: 184px;
+      margin-bottom: 45px;
+    }
+  }
+  &__buttom {
+    width: 184px;
+    height: 45px;
+    background: $color-buttom;
+    border-radius: 22px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    &--link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__buttom-up {
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    top: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--img {
+      width: 20px;
+      height: 24px;
+    }
   }
 }
