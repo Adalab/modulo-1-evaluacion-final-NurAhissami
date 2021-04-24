@@ -151,7 +151,8 @@ table {
   background-color: #0271bc;
   position: absolute;
   width: 44px;
-  height: 44px; }
+  height: 44px;
+  position: fixed; }
   .header__nav--menu {
     color: white;
     margin: auto;
