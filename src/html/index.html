@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Evaluación</title>
+  <title>Anonymous Proxy</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -19,38 +19,8 @@
 
 <body>
   <include src="./partials/header.html"></include>
-  <main>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/tips.html"></include>
-
-    <section class="background">
-      <div class="central-column">
-        <div class="reason">
-          <h2 class="reason__title" id="reason">3 Reasons to purchase</h2>
-          <include src="./partials/reason.html" title="Ut sed metus"
-            description="Lorem ipsum dolor sit amet, consectetur.">
-          </include>
-          <include src="./partials/reason.html" title="Carabitur ac erat"
-            description="Mauris mattis urna quis lorem molestie.">
-          </include>
-          <include src="./partials/reason.html" title="Morbi dictumst"
-            description="Alquam in dolor et dolor tincidunt.">
-          </include>
-          <div class="reason__buttom">
-            <a class="reason__buttom--link" href="https://adalab.es/" target="_blank" title="More reasons">More
-              Reasons</a>
-          </div>
-          <div class="reason__buttom-up">
-            <a class="reason__buttom-up--link" href="#hero" title="down">
-              <img class="reason__buttom-up--img" src="./assets/images/ico-arrow.svg" alt="up" title="up">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <include src="./partials/main.html"></include>
   <include src="./partials/footer.html"></include>
-
 </body>
 
 </html>
