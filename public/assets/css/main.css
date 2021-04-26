@@ -186,7 +186,8 @@ table {
     line-height: 45px;
     margin-top: 45px;
     margin-bottom: 53px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5); }
+    -webkit-animation: up 1s alternate infinite ease-in-out;
+    animation: up 1s alternate infinite ease-in-out; }
     .hero__buttom--img {
       width: 20px;
       height: 11.7px; }
@@ -201,6 +202,18 @@ table {
       font-size: 100px;
       max-width: 730px;
       line-height: 132px; } }
+
+@-webkit-keyframes up {
+  0% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(10%); } }
+
+@keyframes up {
+  0% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(10%); } }
 
 .tips {
   margin-top: 30px; }
@@ -328,25 +341,13 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-animation-name: shadow;
-    animation-name: shadow;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; }
+    -webkit-animation: shadow 2s alternate infinite ease-in-out;
+    animation: shadow 2s alternate infinite ease-in-out; }
     .reason__buttom-up--img {
       width: 20px;
       height: 24px;
-      -webkit-animation-name: up;
-      animation-name: up;
-      -webkit-animation-duration: 3s;
-      animation-duration: 3s;
-      -webkit-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite; }
+      -webkit-animation: up 0.7s alternate infinite ease-in-out;
+      animation: up 0.7s alternate infinite ease-in-out; }
   @media (min-width: 768px) {
     .reason {
       gap: 30px;
@@ -401,17 +402,11 @@ table {
     box-shadow: 0 0 4px rgba(242, 96, 2, 0.25);
     bottom: 1em; } }
 
-@-webkit-keyframes up {
-  from {
-    transform: translate(0, 40%); }
-  to {
-    transform: translate(0, 10%); } }
-
 @keyframes up {
-  from {
-    transform: translate(0, 40%); }
-  to {
-    transform: translate(0, 10%); } }
+  0% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(10%); } }
 
 .background-footer {
   background: #304268; }

@@ -68,17 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: shadow;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: shadow 2s alternate infinite ease-in-out;
     &--img {
       width: 20px;
       height: 24px;
-      animation-name: up;
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
+      animation: up 0.7s alternate infinite ease-in-out;
     }
   }
   @media (min-width: 768px) {
@@ -127,10 +121,10 @@
   }
 }
 @keyframes up {
-  from {
-    transform: translate(0, 40%);
+  0% {
+    transform: translateY(40%);
   }
-  to {
-    transform: translate(0, 10%);
+  100% {
+    transform: translateY(10%);
   }
 }
