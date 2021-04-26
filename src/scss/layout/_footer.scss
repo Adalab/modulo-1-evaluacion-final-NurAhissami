@@ -46,25 +46,24 @@
   }
   @media (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding-top: 45px;
     &__links {
+      width: 160px;
       text-align: left;
       order: 2;
     }
     &__socialmedia {
+      width: 160px;
       text-align: left;
       order: 3;
     }
     &__copy {
+      width: 160px;
       order: 1;
       align-items: flex-start;
     }
-  }
-  @media (min-width: 1200px) {
-    margin-left: 370px;
-    margin-right: 370px;
   }
 }
 .fa-heart {
