@@ -1,4 +1,6 @@
 .tips {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   &__small-text {
     display: block;
@@ -21,13 +23,14 @@
   }
   &__buttom {
     margin-bottom: 45px;
+    margin-top: 20px;
     &--link {
       text-decoration: none;
-      color: $color-buttom;
+      color: white;
       font-size: 20px;
       width: 76px;
       height: 45px;
-      border: 2px solid $color-buttom;
+      background: $color-buttom;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,8 +45,10 @@
     &__title {
       @include subtitlemedia768;
       width: 100%;
+      order: -1;
     }
     &__buttom {
+      margin-top: 0;
       &--link {
         width: 91px;
       }

@@ -177,14 +177,15 @@ table {
     text-transform: uppercase; }
   .hero__subtitle {
     color: white;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 45px; }
   .hero__buttom {
+    display: none;
     width: 45px;
     background: white;
     border-radius: 50%;
     text-align: center;
     line-height: 45px;
-    margin-top: 45px;
     margin-bottom: 53px;
     -webkit-animation: up 1s alternate infinite ease-in-out;
     animation: up 1s alternate infinite ease-in-out; }
@@ -196,7 +197,9 @@ table {
       font-size: 80px;
       line-height: 106px; }
     .hero__subtitle {
-      font-size: 24px; } }
+      font-size: 24px; }
+    .hero__buttom {
+      display: block; } }
   @media (min-width: 1200px) {
     .hero__title {
       font-size: 100px;
@@ -216,6 +219,8 @@ table {
     transform: translateY(10%); } }
 
 .tips {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px; }
   .tips__small-text {
     display: block;
@@ -239,14 +244,15 @@ table {
     color: #4a4a4a;
     margin-bottom: 30px; }
   .tips__buttom {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    margin-top: 20px; }
     .tips__buttom--link {
       text-decoration: none;
-      color: #f26002;
+      color: white;
       font-size: 20px;
       width: 76px;
       height: 45px;
-      border: 2px solid #f26002;
+      background: #f26002;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -260,9 +266,12 @@ table {
       font-family: "Roboto Slab", serif;
       font-size: 26px;
       font-weight: 700;
-      width: 100%; }
-    .tips__buttom--link {
-      width: 91px; } }
+      width: 100%;
+      order: -1; }
+    .tips__buttom {
+      margin-top: 0; }
+      .tips__buttom--link {
+        width: 91px; } }
   @media (min-width: 1200px) {
     .tips {
       margin-left: 275px;

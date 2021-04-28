@@ -20,14 +20,16 @@
   &__subtitle {
     color: $color-one;
     margin-top: 20px;
+    margin-bottom: 45px;
   }
   &__buttom {
+    display: none;
     width: 45px;
     background: $color-one;
     border-radius: 50%;
     text-align: center;
     line-height: 45px;
-    margin-top: 45px;
+
     margin-bottom: 53px;
     animation: up 1s alternate infinite ease-in-out;
 
@@ -43,6 +45,9 @@
     }
     &__subtitle {
       font-size: 24px;
+    }
+    &__buttom {
+      display: block;
     }
   }
   @media (min-width: 1200px) {

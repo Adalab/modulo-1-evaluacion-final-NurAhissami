@@ -63,4 +63,4 @@ This tiny project was created by **Nur Ahissami Yordi**
 >
 > **LinkedIn:** [Nur Ahissami](https://www.linkedin.com/in/nur-ahissami-1a7b24157/)
 
-**Instagram:** [@nurahissami.design](https://www.instagram.com/nurahissami.design/)
+> **Instagram:** [@nurahissami.design](https://www.instagram.com/nurahissami.design/)
